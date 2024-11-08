@@ -1,0 +1,14 @@
+.bouncing-box {
+    width: 100px; /* Set width of the box */
+    height: 100px; /* Set height of the box */
+    border-radius: 20px; /* Rounded corners */
+    position: relative; /* Relative positioning */
+    background-color: blue; /* Initial color */
+    animation: bounceAnimation 3s infinite; /* Set animation name, duration, and infinite repetition */
+}
+
+@keyframes bounceAnimation {
+    0% { top: 0; background-color: blue; } /* Start position and color */
+    50% { top: 200px; background-color: orange; } /* Bounce down and change color */
+    100% { top: 0; background-color: blue; } /* Return to start position and color */
+}
